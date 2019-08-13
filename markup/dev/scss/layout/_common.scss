@@ -1,0 +1,82 @@
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: $base-background-color;
+}
+
+.container {
+  max-width: $max-width-center-container;
+  padding: $padding-container;
+  margin: 0 auto;
+}
+
+.statistic-list{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap:wrap;
+	font-size: 14px;
+	margin-bottom: 19px;
+	justify-content: center;
+
+	@include media('≥tablet'){
+		font-size: 17px;
+		justify-content: flex-start;
+	}
+
+	li{
+		&:not(:last-child){
+			margin-right: 12px;
+			@include media('≥phone'){
+				margin-right: 34px;
+			}
+		}
+	}
+
+	a{
+		color: $black-100;
+		transition: 0.3s opacity ease-in-out;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+
+	.count{
+		margin-right: 5px;
+		font-weight: $bold;
+	}
+}
+
+.btn-load-more{
+	font-size: 12px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	padding: 10px;
+	color: $black;
+	border: 1px solid $black;
+	text-decoration: none;
+}
+
+.btn{
+	display: inline-block;
+	color: $blue;
+	border: 1px solid $blue;
+	border-radius: 4px;
+	font-size: 12px;
+	font-family: $base-font-serif;
+	letter-spacing: -0.04em;
+
+	@include media('≥phone'){
+		font-size: 15px;
+		padding: 5px 10px;
+	}
+
+	&.btn-default{
+		min-width: 120px;
+
+		@include media('≥phone'){
+			min-width: 150px;
+		}
+	}
+}

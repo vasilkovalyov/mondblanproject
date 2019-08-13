@@ -1,0 +1,175 @@
+.header{
+	position: relative;
+	padding: 4px 0 13px;
+	margin-bottom: 30px;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: calc(100%);
+		background: linear-gradient(to bottom, $light-gray-300 0%, $light-gray-400 60%, transparent 100%);
+		height: 15px;
+	}
+
+	.container{
+		max-width: 728px;
+	}
+
+  	.logo {
+  		max-width: 80px;
+  		width: 100%;
+		margin: 0 auto 10px;
+
+		@include media('≥tablet'){
+			max-width: 120px;
+			margin: 0 20px 0 0;
+		}
+
+		@include media('≥desktop'){
+			max-width: 161px;
+		}
+  	}
+
+  	.logo-slogan{
+  		text-align: center;
+  		display: block;
+  		margin-bottom: 10px;
+
+  		@include media('≥tablet'){
+  			display: inline-block;
+			margin-right: 20px;
+			margin-bottom: 0;
+			text-align: left;
+		}
+  	}
+
+  	.content{
+  		@include media('≥tablet'){
+  			padding-top: 20px;
+  			width: 75%;
+  		}
+
+  		@include media('≥desktop'){
+  			padding-top: 36px;
+  			width: auto;	
+  		}
+  	}
+
+  	.title-holder{
+  		margin-bottom: 16px;
+
+  		@include media('<tablet'){
+			text-align: center;
+  		}
+
+  		@include media('≥tablet'){
+			display: flex;
+			align-items: flex-end;
+		}
+  	}
+
+  	.btn{
+  		@include media('≥tablet'){
+			margin-bottom: 4px;
+		}
+  	}
+
+}
+
+.header-holder {
+	@include media('≥tablet'){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.form-date-sorting{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	justify-content: center;
+	flex-direction: column;
+
+	@include media('≥tablet'){
+		justify-content: flex-start;
+		flex-direction: row;
+	}
+
+
+
+	.input-item{
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		border-radius: 5px;
+
+		@include media('≥phone'){
+			width: 185px;
+		}
+
+		&:not(:last-of-type){
+			margin-bottom: 10px;
+
+			@include media('≥tablet'){
+				margin-right: 21px;
+				margin-bottom: 0;
+			}
+		}
+
+		[class^="icon-"]{
+			position: absolute;
+			top: 1px;
+			bottom: 1px;
+			width: 32px;
+			background-color: $light-gray-100;
+			color: $gray-100;
+			border-left: 1px solid $light-gray;
+			display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		transition: 0.3s background-color ease-in-out;
+		}
+
+		.icon-close-button{
+			right: 31px;
+			font-size: 13px;
+
+			&:hover{
+				cursor: pointer;
+				background-color: darken($light-gray-100, 10%);
+			}
+		}
+
+		.icon-calendar{
+			right: 1px;
+			font-size: 19px;
+			border-radius: 0 5px 5px 0;	
+		}
+	}
+
+	label{
+		font-family: 'Tahoma';
+		font-size: 17px;
+		margin-right: 14px;
+		margin-bottom: 10px;
+
+		@include media('≥tablet'){
+			margin-bottom: 0;
+		}
+	}
+
+	input{
+		width: 100%;
+		font-size: 14px;
+		font-family: $base-font-serif;
+	}
+}
+
+
+
+.resize-active .nav-drop,
+.resize-active .nav-drop > ul {
+  transition:none !important;
+}

@@ -1,0 +1,42 @@
+header#header.header
+	.container
+		.header-holder
+			.logo: a(href="#")
+				img(src="images/logo.png" alt="logo" )
+			.content
+				.title-holder
+					span.logo-slogan
+						img(src="images/logo-2.png", alt="mondblanproject")
+					a.btn.btn-default(href="#") Start on <time datetime="2016-02-17"> 17-02-2016 </time>
+				ul.statistic-list
+					li
+						a(href="#")
+							span.count 870
+							span.category posts
+					li
+						a(href="")
+							span.count 11,787
+							span.category followers
+					li
+						a(href="")
+							span.count 112
+							span.category following
+				form.form-date-sorting
+					label Date
+					.input-item
+						input(
+							type="text",
+							placeholder='from'
+						)
+						span.icon-close-button
+						span.icon-calendar
+					.input-item
+						input(
+							type="text",
+							placeholder='before'
+						)
+						span.icon-close-button
+						span.icon-calendar
+
+
+			
