@@ -1,5 +1,9 @@
 .section-post-card{
-	padding-top: 42px;
+	padding: 30px 0;
+
+	@include media('≥tablet'){
+		padding: 42px 0 70px;
+	}
 
 	.df-row{
 		@include media('≥phone'){
@@ -14,13 +18,23 @@
 			padding: 0 15px;
 			width: 50%;
 		}
+
 		@include media('≥tablet'){
 			width: 33.33%;
 		}
 	}
+
+	.card-list-wrapper{
+		margin-bottom: 14px;
+	}
+
+	.btn-wrapper{
+		text-align: center;
+	}
 }
 
 .post-card{
+	position: relative;
 	color: $white;
 	margin-bottom: 30px;
 	min-height: 90vw;
@@ -44,6 +58,20 @@
 	
 	@include media('≥desktop'){
 		min-height: 292px;
+	}
+
+	&.video{
+		.video-img{
+			position: absolute;
+			top: 11px;
+    		right: 9px;
+    		max-width: 25px;
+    		width: 100%;
+
+    		@include media('≥tablet'){
+    			max-width: 38px;
+    		}
+		}
 	}
 
 

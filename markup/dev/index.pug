@@ -4,186 +4,291 @@ include pug/common/_head
 		main#main(role="main")
 			section.section-post-card
 				.container
-					.df-row
-						.col 
-							.post-card(
-								style='background-image: url(images/img-1.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-						.col 
-							.post-card(
-								style='background-image: url(images/img-2.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: '12,800',
-												countComments: '3,100'
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-						.col 
-							.post-card(
-								style='background-image: url(images/img-3.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-
-						.col 
-							.post-card(
-								style='background-image: url(images/img-4.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-						.col 
-							.post-card(
-								style='background-image: url(images/img-5.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-						.col 
-							.post-card(
-								style='background-image: url(images/img-6.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-
-						.col 
-							.post-card(
-								style='background-image: url(images/img-7.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-						.col 
-							.post-card(
-								style='background-image: url(images/img-8.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
-						.col 
-							.post-card(
-								style='background-image: url(images/img-9.jpg)'
-							)
-								.content
-									ul.post-list-info
-										li
-											+totalCounterPost({
-												title: 'Today',
-												countLikes: 128,
-												countComments: 31
-											})
-
-										li
-											+totalCounterPost({
-												date: '9-08-2016',
-												countLikes: 67,
-												countComments: 22
-											})
-									span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+					.card-list-wrapper
+						.df-row
+							.col 
+								.post-card(
+									style='background-image: url(images/img-1.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card(
+									style='background-image: url(images/img-2.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 12,800
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 3,100
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card.video(
+									style='background-image: url(images/img-3.jpg)'
+								)
+									.content
+										span.video-img
+											img(src="images/video-img.png", alt="video icon")
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-play
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card(
+									style='background-image: url(images/img-4.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card.video(
+									style='background-image: url(images/img-5.jpg)'
+								)
+									.content
+										span.video-img
+											img(src="images/video-img.png", alt="video icon")
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-play
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-play
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card(
+									style='background-image: url(images/img-6.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card(
+									style='background-image: url(images/img-7.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card(
+									style='background-image: url(images/img-8.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							.col 
+								.post-card(
+									style='background-image: url(images/img-9.jpg)'
+								)
+									.content
+										ul.post-list-info
+											li
+												span.caption Today
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 128
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 31
+											li
+												time(
+													datetime= '9-08-2016'
+												).caption 9-08-2016
+												ul.total-info
+													li
+														a(href="#")
+															span.icon-heart
+															span.count 67
+													li
+														a(href="#")
+															span.icon-comment
+															span.count 22
+										span.image-upload Image upload: <time datetime='2016-04-11'>11-04-2016</time>
+							
+					.btn-wrapper
+						a(href='#').btn-load-more Load more

@@ -80,3 +80,22 @@
 		}
 	}
 }
+
+.btn-load-more{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	display: inline-block;
+    min-width: 129px;
+    border-radius: 16px;
+    padding: 7px 10px 5px;
+    letter-spacing: 0.1em;
+	transition: 0.3s color ease-in-out,
+				0.3s background-color ease-in-out,
+				0.3s border-color ease-in-out;
+    &:hover{
+    	background-color: $blue;
+    	color: $white;
+    	border-color: transparent;
+    }
+}

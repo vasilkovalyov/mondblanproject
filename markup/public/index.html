@@ -22,10 +22,10 @@
 							<form class="form-date-sorting">
 								<label>Date</label>
 								<div class="input-item">
-									<input type="text" placeholder="from"><span class="icon-close-button"></span><span class="icon-calendar"></span>
+									<input class="datepicker-here" type="text" placeholder="from" data-language="en"><span class="icon-close-button"></span><span class="icon-calendar"></span>
 								</div>
 								<div class="input-item">
-									<input type="text" placeholder="before"><span class="icon-close-button"></span><span class="icon-calendar"></span>
+									<input class="datepicker-here" type="text" placeholder="before" data-language="en"><span class="icon-close-button"></span><span class="icon-calendar"></span>
 								</div>
 							</form>
 						</div>
@@ -35,197 +35,200 @@
 			<main id="main" role="main">
 				<section class="section-post-card">
 					<div class="container">
-						<div class="df-row">
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-1.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+						<div class="card-list-wrapper">
+							<div class="df-row">
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-1.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-2.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">12,800</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">3,100</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-2.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">12,800</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">3,100</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-3.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card video" style="background-image: url(images/img-3.jpg)">
+										<div class="content"><span class="video-img"><img src="images/video-img.png" alt="video icon"></span>
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-play"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-4.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-4.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-5.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card video" style="background-image: url(images/img-5.jpg)">
+										<div class="content"><span class="video-img"><img src="images/video-img.png" alt="video icon"></span>
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-play"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-play"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-6.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-6.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-7.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-7.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-8.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-8.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col"> 
-								<div class="post-card" style="background-image: url(images/img-9.jpg)">
-									<div class="content">
-										<ul class="post-list-info">
-											<li><span class="caption">Today</span>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
-												</ul>
-											</li>
-											<li>
-												<time class="caption" datetime="9-08-2016">9-08-2016</time>
-												<ul class="total-info">
-													<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
-													<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
-												</ul>
-											</li>
-										</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+								<div class="col"> 
+									<div class="post-card" style="background-image: url(images/img-9.jpg)">
+										<div class="content">
+											<ul class="post-list-info">
+												<li><span class="caption">Today</span>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">128</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">31</span></a></li>
+													</ul>
+												</li>
+												<li>
+													<time class="caption" datetime="9-08-2016">9-08-2016</time>
+													<ul class="total-info">
+														<li><a href="#"><span class="icon-heart"></span><span class="count">67</span></a></li>
+														<li><a href="#"><span class="icon-comment"></span><span class="count">22</span></a></li>
+													</ul>
+												</li>
+											</ul><span class="image-upload">Image upload: <time datetime='2016-04-11'>11-04-2016</time></span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="btn-wrapper"><a class="btn-load-more" href="#">Load more</a></div>
 					</div>
 				</section>
 			</main>
@@ -233,5 +236,7 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"></\/script>')</script>
 		<script type="text/javascript" src="js/jquery.main.js"></script>
+		<script src="./js/datepicker/datepicker.min.js"></script>
+		<script src="./js/datepicker/datepicker.en.js"></script>
 	</body>
 </html>
