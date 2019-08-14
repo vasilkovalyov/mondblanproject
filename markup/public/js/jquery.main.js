@@ -1,12 +1,9 @@
 jQuery(function() {
-	initDatePicker();
+	new WOW().init();
 	removeValueInput();
+	initSetDelayOnPosts();
 });
 
-function initDatePicker(){
-	$('#my-element').datepicker()
-	$('#my-element').data('datepicker')
-}
 
 function removeValueInput(){
 	var inputHolder = jQuery('.input-item');
@@ -16,4 +13,12 @@ function removeValueInput(){
 		var input = jQuery(e.target.previousSibling);
 		input.val('');
 	})
+}
+
+function initSetDelayOnPosts(){
+	var post = jQuery('.post-card');
+
+	for(var i = 0; i <= post.length - 1; i++){
+		jQuery(post[i]).css({'animation-delay' : i/4+'s'});
+	}
 }
